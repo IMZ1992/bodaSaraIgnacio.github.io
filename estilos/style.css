@@ -1,0 +1,437 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+ }
+ header {
+   background-color: #e99ee661;
+   color:rgb(6, 12, 17);
+   text-align: center;
+   padding: 10px;
+   width:100%;
+ }
+ 
+ /*Regla del menu*/
+ .menu{
+     list-style: none;
+     padding: 0;
+     background: #e99ee661;
+     width: 100%;
+     margin: auto;
+     text-align: center;  
+ }
+ .menu li a{
+     text-decoration: none;
+     color:rgb(6, 12, 17);
+     padding: 18px;
+     display: block;
+ }
+ .menu li {
+   display: inline-block;
+   text-align: center;  
+   color: #ffcdf8;
+ }
+ .menu li a:hover{
+     background: #e788cb;
+     border-radius: 50px; /* Puedes ajustar el valor según desees */
+ }
+ /* Menu welcome*/
+ 
+ #bienvenidaDiv {
+     background-image: url('./fondo.jpeg');
+     background-size: cover;/* Ajusta el tamaño de la imagen de fondo */
+     overflow: hidden;
+     background-size: 50% auto; /* Cambiar el valor para ajustar el tamaño */
+     height: 100vh; /* Esto asegurará que el div tenga la altura completa de la ventana del navegador */
+     background-repeat: no-repeat;/* Evita que el fondo se repita */
+     background-position: center; /* Alinea el fondo en el centro */
+     align-items: center;
+     max-width: 600px; /* Ancho máximo del contenido */
+     margin: 0 auto; /* Centrar el contenido horizontalmente */
+     padding: 20px; /* Espacio alrededor del contenido */
+     border-radius: 10px; /* Bordes redondeados */
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+     filter: grayscale(75%);
+ }
+ .welcomeTittle{
+   text-align: center;
+   color: #333; /* Color del título */
+ }
+ .welcome-text {
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 15px; /* Espacio entre párrafos */
+ }
+ 
+ /*Estilos cronología*/
+ 
+ #itinerarioDiv {
+     margin-top: 50px;
+     background-color: #eff0ed;
+     padding: 20px;
+     
+ }
+ 
+ #itinerarioDiv h2 {
+     text-align: center;
+     color: #333;
+ }
+ 
+ .cronograma {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .evento {
+     margin-bottom: 20px;
+ }
+ 
+ .evento h3 {
+     color: #555;
+ }
+ 
+ .evento p {
+     margin: 5px 0;
+     color: #777;
+ }
+ 
+ .evento p a {
+     /*color: #007bff;*/
+     text-decoration: none;
+ }
+ 
+ .evento p a:hover {
+     text-decoration: underline;
+ }
+ .maps{
+   align-items: center ;
+ }
+ /*Estilos Formuario*/
+ #confirmacionDiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px; /* Ajusta el ancho según sea necesario */
+}
+
+ /*Estilos DressCode*/
+.dresscode-info-text{
+  text-align: center;
+}
+
+ .imagen-dresscode{
+   width: 200px; /* Establece el ancho deseado */
+   height: auto; /* Mantiene la proporción original de la imagen */
+ }
+ .dresscode-info {
+  display: flex;
+  justify-content: space-around; /* Ajusta el espacio entre las imágenes */
+}
+
+.imagen-dresscode {
+  text-align: center; /* Centra el contenido dentro de cada imagen */
+}
+
+.imagen-dresscode img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+}
+ /* Turismo*/
+ 
+ .turismo {
+   background-color: #f8f4e5; /* Fondo beige */
+   padding: 20px;
+ }
+ 
+ .monasterio-section,
+ .arco-tinte-section {
+   margin-bottom: 40px;
+ }
+ 
+ h2 {
+   font-family: 'Times New Roman', serif; /* Caligrafía romana */
+   color: #333;
+ }
+ 
+ img {
+   max-width: 100%;
+   height: auto;
+   margin-top: 20px;
+   border-radius: 10px;
+ }
+ 
+ 
+ .section-header h2,
+ .section-header p {
+   margin: 0;
+ }
+ 
+ .monasterio-section-descr {
+   background-color: #fff; /* Fondo blanco */
+   border-radius: 10px; /* Bordes redondeados */
+   margin-top: 15px;
+   padding: 20px; /* Espaciado interno */
+   margin-bottom: 40px; /* Margen inferior para separar secciones */
+   width: 500px;
+   height: 400px;
+ }
+ 
+ .turismo {
+   display: flex;
+   flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no hay suficiente espacio */
+ }
+ 
+ .monasterio-section {
+   display: flex; /* Hace que los elementos hijos estén en línea */
+   flex-grow: 1; /* Permite que este contenedor crezca para ocupar el espacio disponible */
+ }
+ 
+ .monasterio-section-descr {
+   background-color: #fff; /* Fondo blanco */
+   border-radius: 10px; /* Bordes redondeados */
+   margin-top: 30px;
+   padding: 20px; /* Espaciado interno */
+   margin-bottom: 40px; /* Margen inferior para separar secciones */
+   width: 50%; /* Ocupa el 50% del ancho del contenedor padre */
+ }
+ 
+ .section-header-foto-monasterio {
+   margin-left: 20px; /* Espaciado entre las dos secciones */
+   width: 50%; /* Ocupa el 50% del ancho del contenedor padre */
+ }
+ 
+ img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px; /* Bordes redondeados para la imagen */
+ }
+ 
+ 
+ .section-header-patrimonio {
+   width: 100%;
+   font-family: 'Allura',handwriting;
+   text-align: center;
+   font-size: 2vw;
+   text-shadow: 0.08em 0.08em 0em rgba(0,0,0,0.4);
+   background-image: url('./guadalupe-grande.jpg'); /* Ruta de la imagen de fondo */
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+   color: #fff; /* Color del texto, ajusta según el contraste con la imagen */
+   padding: 40px; /* Espaciado interno */
+ }
+ 
+ .section-header-patrimonio h2,
+ .section-header-patrimonio p {
+   margin: 0;
+ }
+ .image-container-arco-tinte {
+     display: flex;
+     position: relative;
+    width:500px; 
+    height: 500px;
+   }
+   
+   .image-container-arco-tinte img {
+     width: 100%; /* La imagen ocupará el 100% del ancho del contenedor padre */
+     height: auto;
+     display: block;
+     margin-bottom: 30px;
+   }
+   
+   .text-box-arco-tinte {
+     position: absolute;
+     top: 80%; /* Coloca el cuadro de texto en el centro verticalmente */
+     left: 0%; /* Coloca el cuadro de texto en el centro horizontalmente */
+    /* transform: translate(-50%, -50%); /* Centra el cuadro de texto correctamente */
+     background-color: rgb(255, 255, 255); /* Fondo oscuro semitransparente */
+     color: #0c0b0b; /* Color del texto en el cuadro */
+     padding: 20px; /* Espaciado interno en el cuadro */
+     border-radius: 10px; /* Bordes redondeados para el cuadro */
+     text-align: center;
+   }
+   
+   .text-box-arco-tinte h3,
+   .text-box-arco-tinte p {
+     margin: 0;
+   }
+ 
+   /*Fuente del angel*/
+   .image-container-fuente-angel{
+     display: flex;
+     position: relative;
+    width:500px; 
+    height: 500px;
+   }
+   
+   .image-container-fuente-angel img {
+     width: 100%; /* La imagen ocupará el 100% del ancho del contenedor padre */
+     height: auto;
+     display: block;
+     margin-bottom: 30px;
+   }
+   
+   .text-box-fuente-angel {
+     position: absolute;
+     top: 80%; /* Coloca el cuadro de texto en el centro verticalmente */
+     left: 0%; /* Coloca el cuadro de texto en el centro horizontalmente */
+    /* transform: translate(-50%, -50%); /* Centra el cuadro de texto correctamente */
+     background-color: rgb(255, 255, 255); /* Fondo oscuro semitransparente */
+     color: #0c0b0b; /* Color del texto en el cuadro */
+     padding: 20px; /* Espaciado interno en el cuadro */
+     border-radius: 10px; /* Bordes redondeados para el cuadro */
+     text-align: center;
+   }
+   
+   .text-box-fuente-angel h3,
+   .text-box-fuetne-angel p {
+     margin: 0;
+   }
+ 
+    /*Casa de Gil Cordero*/
+    .image-container-gil{
+     display: flex;
+     position: relative;
+    width:500px; 
+    height: 500px;
+   }
+   
+   .image-container-gil img {
+     width: 100%; /* La imagen ocupará el 100% del ancho del contenedor padre */
+     height: auto;
+     display: block;
+     margin-bottom: 30px;
+   }
+   
+   .text-box-gil {
+     position: absolute;
+     top: 80%; /* Coloca el cuadro de texto en el centro verticalmente */
+     left: 0%; /* Coloca el cuadro de texto en el centro horizontalmente */
+    /* transform: translate(-50%, -50%); /* Centra el cuadro de texto correctamente */
+     background-color: rgb(255, 255, 255); /* Fondo oscuro semitransparente */
+     color: #0c0b0b; /* Color del texto en el cuadro */
+     padding: 20px; /* Espaciado interno en el cuadro */
+     border-radius: 10px; /* Bordes redondeados para el cuadro */
+     text-align: center;
+   }
+   
+   .text-box-gil h3,
+   .text-box-gil p {
+     margin: 0;
+   }
+ 
+   .image-container{
+     display: flex;
+     position: relative;
+    width:500px; 
+    height: 500px;
+   }
+   
+   .image-container img {
+     width: 100%; /* La imagen ocupará el 100% del ancho del contenedor padre */
+     height: auto;
+     display: block;
+     margin-bottom: 30px;
+   }
+   
+   .text-box {
+     position: absolute;
+     top: 80%; /* Coloca el cuadro de texto en el centro verticalmente */
+     left: 0%; /* Coloca el cuadro de texto en el centro horizontalmente */
+    /* transform: translate(-50%, -50%); /* Centra el cuadro de texto correctamente */
+     background-color: rgb(255, 255, 255); /* Fondo oscuro semitransparente */
+     color: #0c0b0b; /* Color del texto en el cuadro */
+     padding: 20px; /* Espaciado interno en el cuadro */
+     border-radius: 10px; /* Bordes redondeados para el cuadro */
+     text-align: center;
+   }
+   
+   .text-box h3,
+   .text-box p {
+     margin: 0;
+   }
+ 
+   .TuristTitle{
+     color: #eff0ed;
+   }
+ 
+   /*DressCode*/
+   #dresscodeDiv {
+     margin-top: 50px;
+     background-color: #f9f9f9;
+     padding: 20px;
+ }
+ 
+ #dresscodeDiv h2 {
+     text-align: center;
+     color: #333;
+ }
+ 
+ .dresscode-info {
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+ }
+ 
+ .dresscode-info h3 {
+     color: #555;
+ }
+ 
+ .dresscode-info p {
+     color: #777;
+ }
+ 
+ .imagen-dresscode {
+     margin-top: 20px;
+ }
+ 
+ .imagen-dresscode img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .imagen-dresscode p {
+     margin-top: 10px;
+ }
+
+ /*TURISMOS POR GUADALUPE*/
+
+
+ /* Estilos generales */
+ .image-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ 
+ .image-container {
+   flex: 0 1 calc(33.33% - 10px); /* Ancho de cada columna (33.33%) menos el espacio entre ellas */
+   margin-bottom: 330px;
+ }
+ 
+ .image-container img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ .text-box {
+   background-color: #f4f4f4;
+   padding: 10px;
+ }
+ 
+ /* Estilos específicos */
+ .turismo {
+   margin-top: 100px;
+ }
+   /* Estilos generales */
+   
+/*footer*/
+footer {
+  background-color: #e99ee661;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
